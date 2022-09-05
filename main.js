@@ -7,7 +7,8 @@ var edta = parseInt(prompt("Digite o halo do meropenem com EDTA"));
 var cloxa = parseInt(prompt("Digite o halo do meropenem com cloxa"));
 
 function verificainibidores (){
-    if ((mero-boronico) <= 5 && ((mero-edta) <= 5 && ((mero - cloxa) <=5){
-        `O mecanismo mudança permeabilidade`
+    if ((mero-boronico) <= 5 && (mero-edta) <= 5 && (mero - cloxa) <=5)
+        console.log(`O mecanismo mudança permeabilidade`);
     }
-}
+
+verificainibidores();
