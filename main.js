@@ -2,16 +2,15 @@
 //false = (não possio diferença em relação ao mero)
 
 let mero = parseInt(prompt("Digite o halo do Meropenem"));
-let boronico = parseInt(prompt("Digite o halo do meropenem com ac.Boronico"));
-let edta = parseInt(prompt("Digite o halo do meropenem com EDTA"));
-let cloxa = parseInt(prompt("Digite o halo do meropenem com cloxa"));
+let boronico = ((parseInt(prompt("Digite o halo do meropenem com ac.Boronico"))) - mero);
+let edta = ((parseInt(prompt("Digite o halo do meropenem com EDTA"))) - mero);
+let cloxa = ((parseInt(prompt("Digite o halo do meropenem com cloxa"))) - mero);
 
 function verificainibidores (mero,boronico,edta,cloxa){
-    if ((boronico-mero) <= 5 && (edta-mero) <= 5 && (cloxa-mero) <=5)
+    if (boronico <= 5 && edta <= 5 && cloxa <=5)
         console.log(`Mecanismo: Permeabilidade`);
-        break
         else{
-            ((boronico-mero) > 4 && (edta-mero) <= 5 && (cloxa-mero) <=5)
+            (boronico >= 5 && edta <= 5 && cloxa <=5)
         console.log(`Mecanismo: KPC`)
         }
     }
