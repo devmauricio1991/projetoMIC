@@ -1,12 +1,17 @@
 //true = ( > que 5mm de diferença no halo em comparação ao mero)
 //false = (não possio diferença em relação ao mero)
 
-let mero = //recebe true or false
-let boronico = //recebe true or false
-let edta = //recebe true or false
-let cloxa = //recebe true or false
 
-console.log(mero);
+let boronico = document.getElementById("br");
+let edta = document.getElementById("ed");
+let cloxa = document.getElementById("cl");
+let cesp = document.getElementById("cesp");
+let ncesp = document.getElementById("ncesp");
+let temocilina = document.getElementById("te");
+let cazavi = document.getElementById("ca");
+let meropenem = document.getElementById("me");
+let imipenem = document.getElementById("im");
+
 console.log(boronico);
 console.log(edta);
 console.log(cloxa);
