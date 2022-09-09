@@ -17,8 +17,10 @@ console.log(edta);
 console.log(cloxa);
 
 
+
+
 function verificakpc (boronico,edta,cloxa){
-    if (boronico == true && edta == false && cloxa == false)
+    if (boronico.checked == true && edta == false && cloxa == false)
         return console.log(`KPC`);
 }
 
