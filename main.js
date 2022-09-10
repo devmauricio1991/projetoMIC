@@ -2,15 +2,15 @@
 //false = (não possio diferença em relação ao mero)
 
 
-let boronico = document.getElementById("br");
-let edta = document.getElementById("ed");
-let cloxa = document.getElementById("cl");
-let cesp = document.getElementById("cesp");
-let ncesp = document.getElementById("ncesp");
-let temocilina = document.getElementById("te");
-let cazavi = document.getElementById("ca");
-let meropenem = document.getElementById("me");
-let imipenem = document.getElementById("im");
+var boronico = document.getElementById("br");
+var edta = document.getElementById("ed");
+var cloxa = document.getElementById("cl");
+var cesp = document.getElementById("cesp");
+var ncesp = document.getElementById("ncesp");
+var temocilina = document.getElementById("te");
+var cazavi = document.getElementById("ca");
+var meropenem = document.getElementById("me");
+var imipenem = document.getElementById("im");
 
 console.log(boronico);
 console.log(edta);
@@ -19,10 +19,12 @@ console.log(cloxa);
 
 
 
-function verificakpc (boronico,edta,cloxa){
-    if (boronico.checked == true && edta == false && cloxa == false)
+function verificakpc (){
+    if (boronico.checked === true && edta.checked === false && cloxa.checked === false)
         return console.log(`KPC`);
 }
+
+//fazer ficar automatico - onclick? algo assim
 
 
 
